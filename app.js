@@ -304,23 +304,23 @@ let dishes = [
 
 //10. Create a function that will use advanced array methods on the 'dishes' array and return the result ["Vegetarian Lasagna", "Vegetarian Falafel", "Vegetarian Chili"]
 
-function advancedCuisineName(dishesArray){
-    let filteredCuisine = dishesArray.filter(function(el){
-        if(el.cuisine === "Vegetarian")
-        return true
+//function advancedCuisineName(dishesArray){
+//    let filteredCuisine = dishesArray.filter(function(el){
+//        if(el.cuisine === "Vegetarian")
+//        return true
 
-        else {
-            return false
-        }
-    });
-   let results = filteredCuisine.map(function(el){
-        return el.cuisine + " " + el.name;
-    });
+//        else {
+//            return false
+//        }
+//    });
+//   let results = filteredCuisine.map(function(el){
+//        return el.cuisine + " " + el.name;
+//    });
     
-    return results;
-}
+//    return results;
+//}
 
-console.log(advancedCuisineName(dishes))
+//console.log(advancedCuisineName(dishes))
 
 
 
@@ -328,9 +328,34 @@ console.log(advancedCuisineName(dishes))
 
 //8b. Use the filter method to eliminate duplicate from problem 8a.
 
+//function cuisineTypes(dishesArray){
+//    let filteredCuisine = dishesArray.sort(function(el)){
+//
+//        let results = filteredCuisine.map(function(el){
+//        return el.cuisine;
+//    })
+//    };
+//    
+//    return results;
+//}
+//console.log(cuisineTypes(dishes))
+    
 //11. Create a function that will return dishes whose ingredients array INCLUDES "tomato" OR "cheese".
 //Hint: You do not want to check the array's indexes to find out what the array INCLUDES.
 //Filter
+//function ingInclude(){
+//    let results = dishes.filter(
+//        function(item){
+//            if(item.ingredients.includes("tomato" || "cheese")){
+//                return true;
+//            }
+//        }
+//    );
+//    return results
+//}
+//console.log(ingInclude())
+
+
 
 //12. Create a function that will return the total serving count of all dishes.
 //Must use Reduce, not a loop.
